@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pandas = "*"
+numpy = "*"
+seaborn = "*"
+requests = "*"
+matplotlib = "*"
+ipykernel = "*"
+folium = "*"
+Pillow = ">=8.2.0"
+openpyxl = "*"
+plotly = "*"
+nbformat = "*"
+
+[requires]
+python_version = "3.10"
