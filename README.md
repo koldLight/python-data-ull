@@ -46,6 +46,26 @@ Para instalar los paquetes necesarios con `uv`, haz:
 uv sync
 ```
 
+Necesitas crear el kernel de jupyter, hazlo así:
+
+En mac / linux:
+
+```
+./.venv/bin/python -m ipykernel install --user --name=ull-python-data --display-name "ULL Python Data"
+```
+
+En Windows:
+
+```
+.\.venv\Scripts\python.exe -m ipykernel install --user --name=ull-python-data --display-name "ULL Python Data"
+```
+
+Y para lanzar los jupyter notebooks, estando en la carpeta donde están tus notebooks (donde descomprimiste el material), haz:
+
+```
+uv run jupyter notebook .
+```
+
 ## Opción alternativa - Sin entorno local - Google Colab
 
 Si esto te falla, o no eres administrador de tu ordenador, puedes lanzar el contenido en Google Colab. Para ello, abre:
