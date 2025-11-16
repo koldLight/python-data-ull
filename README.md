@@ -10,43 +10,41 @@ Para descargarlo en un zip, puedes hacer click en code / download zip (o lo equi
 
 ### 2. Instrucciones para poner a punto el entorno
 
-Puedes instalar la última versión de Anaconda para Python 3 para tu sistema operativo desde aquí. Fíjate bien que instales la de Python 3 (y no la de Python 2). Si te sale una ventana que te pide el email, busca y haz clic debajo en la opción "skip registration" / "saltar registro" o similar.
+Puedes utilizar `uv`. Si aún no lo tienes instalado, puedes hacerlo así:
 
-Aquí tienes un tutorial paso a paso de cómo hacerlo:
+En Mac y Linux:
 
-    Windows. Fíjate bien en el paso en el que debes marcar que añada anaconda al PATH. Aunque esté desmarcado y salga como no recomendado, esa casilla debe quedar marcada.
-    Mac.
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-Una vez instalado, nuestra terminal debería reconocer los comandos conda (el gestor de paquetes), jupyter (la herramienta de notebooks) y python, gracias a que hemos añadido anaconda a nuestro PATH. Esto quiere decir que, cuando escribamos uno de estos comandos, nuestro sistema lo buscará en la carpeta de anaconda. Para comprobarlo, abre una consola. Esto se puede hacer:
+En Windows
 
-    En Windows, abriendo el menú inicio y escribiendo cmd.exe. Si necesitas ayuda, mira más opciones aquí.
-    En Mac, abre una terminal. Si necesitas ayuda sobre cómo abrirla, mira aquí.
-    En Ubuntu / Debian, abre una terminal. Si necesitas ayuda, mira aquí.
+```
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
 
-Una vez abierta, ejecuta los siguientes comandos para ver que todo funciona bien:
+Tendrás que abrir la terminal de tu sistema operativo y navegar hasta donde hayas descomprimido el material. Por ejemplo, si está en el escritorio:
 
-python --version
+En Mac:
 
-conda --version
+```
+cd /Users/<tu_nombre_de_usuario>/Desktop/python-data-ull
+```
 
-jupyter --version
+En Windows (con cmd.exe):
 
-Si nos dice que no reconoce el comando, es que no se ha añadido correctamente anaconda al PATH. Los tutoriales referenciados tienen buenas soluciones a este problema habitual.
+```
+cd C:\Usuarios\<tu_nombre_de_usuario>\Escritorio
+```
 
-Aprovecha a instalar la librería folium que utilizaremos más adelante en el curso:
+La ruta la tendrás que sustituir por lo que corresponda.
 
-conda install -c conda-forge folium
+Para instalar los paquetes necesarios con `uv`, haz:
 
-Y finalmente, para abrir los notebooks, que debes descargar del campus virtual (modifica la ruta dependiendo de dónde los hayas descargado):
+```
 
-- En Windows, puedes hacer, desde la consola (cmd.exe):
-
-jupyter notebook --notebook-dir='C:\mi\ruta\con\notebooks\'
-
-- En Mac o Linux, con la terminal:
-
-jupyter notebook --notebook-dir='/mi/ruta/con/notebooks'
-
+```
 
 ## Opción alternativa - Sin entorno local - Google Colab
 
