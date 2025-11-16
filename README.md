@@ -43,7 +43,7 @@ La ruta la tendrás que sustituir por lo que corresponda.
 Para instalar los paquetes necesarios con `uv`, haz:
 
 ```
-
+uv sync
 ```
 
 ## Opción alternativa - Sin entorno local - Google Colab
