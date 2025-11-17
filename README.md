@@ -35,7 +35,7 @@ cd /Users/<tu_nombre_de_usuario>/Desktop/python-data-ull
 En Windows (con cmd.exe):
 
 ```
-cd C:\Usuarios\<tu_nombre_de_usuario>\Escritorio
+cd C:\Usuarios\<tu_nombre_de_usuario>\Escritorio\python-data-ull
 ```
 
 La ruta la tendrás que sustituir por lo que corresponda.
